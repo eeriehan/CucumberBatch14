@@ -6,9 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-       // features = "C:\\Users\\hanjo\\IdeaProjects\\CucumberBatch14\\src\\test\\java\\CucumberTool\\Login.feature"
-        features = "src\\test\\java\\CucumberTool\\Login.feature"
-
+        features =
+                "src\\test\\java\\CucumberTool\\Login.feature"
 )
 
 

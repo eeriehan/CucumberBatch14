@@ -57,13 +57,21 @@ Class 2 -
                         Then    -   Expected output
                         And     -   Supporting tag
 
-    Step definition -   Cucumber provides the snippets of step definition
+    steps definition -   Cucumber provides the snippets of step definition
                         in step definition, we write the code to perform actions which has been written
                         in the BDD statement.
 
                         To execute all the feature files from one class, we need runner class
 
+To keep everything organised we need framework
+    In framework we have 2 separate branches for
+    Java    -   In java, we write all java class
+    Non     -   Java    -   In non Java, we write non java part such as features, files etc
 
+Steps package       -   for all step definitions
+runners package     -   for all runner classes
+config directory    -   for all config files
+features directory  -   for all feature files
 
 
 
