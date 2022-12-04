@@ -1,0 +1,80 @@
+Class 1 -
+
+BDD -   behavioral driven development
+
+          Given
+                When
+                    And
+                        Then
+
+We use BDD scenarios -  to five a clear understanding to other colleagues in the team
+
+To write the BDD scenarios in cucumber  -   we use special type of file
+
+------------------------------------------------------
+User story - Search an employee
+
+Search by id
+
+Given  user navigates to HRMS application
+When   user enters valid username and password
+And    user clicks on login button
+Then   user navigates to dashboard page
+When   user clicks on PIM option
+And    user clicks on search button
+When   user enters valid employee name
+And    user clicks on Search button
+Then   user see employee information is displayed.
+
+
+Search by name
+
+Given  user navigates to HRMS application
+When   user enters valid username and password
+And    user clicks on login button
+Then   user navigates to dashboard page
+When   user clicks on PIM option
+And    user clicks on search button
+When   user enters valid employee name
+And    user clicks on Search button
+Then   user see employee information is displayed.
+
+
+
+------------------------------------------------------
+
+Class 2 -
++Recap
+        BDD -   Behavioral Driven Development
+            -   it allows us to write scenarios in gherkin languge
+
+        Feature -   User story
+
+        Scenario    -   Test case - every test case will be considered as scenario in BDD
+
+                    -   Given   -   Pre-requisite/pre-condition
+                        When    -   perform actions
+                        Then    -   Expected output
+                        And     -   Supporting tag
+
+    Step definition -   Cucumber provides the snippets of step definition
+                        in step definition, we write the code to perform actions which has been written
+                        in the BDD statement.
+
+                        To execute all the feature files from one class, we need runner class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
