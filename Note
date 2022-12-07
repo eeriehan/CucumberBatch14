@@ -7,7 +7,7 @@ BDD -   behavioral driven development
                     And
                         Then
 
-We use BDD scenarios -  to five a clear understanding to other colleagues in the team
+We use BDD scenarios -  to have a clear understanding to other colleagues in the team
 
 To write the BDD scenarios in cucumber  -   we use special type of file
 
@@ -74,6 +74,9 @@ config directory    -   for all config files
 features directory  -   for all feature files
 
 
+*************************************************************************************************************
+
+Class 3 -
 
 
 
