@@ -77,7 +77,28 @@ features directory  -   for all feature files
 *************************************************************************************************************
 
 Class 3 -
+    Recap - BDD - Behavioral driven development
+    because the explanation part was available in diagram
 
+Class 4 -
+    Recap -
+    Runner class - Cucumber options in runner class
+    features - to run the feature file, we provide a path to its repository
+    glue - the path of our step definitions package
+    dryRun - if we set it to true, it stops actual execution and scans all the steps quickly
+    and provide us missing step definition
+    monochrome - to remove irrelavant information from the console
+    plugin - pretty - to print the steps in the console
+    tags - to group the scenario for specific type of execution
+
+
+POM - page object model - it is a design pattern
+
+it allows QA's to keep object repository -
+in simple language, QA's write all the locators of the page in respective class
+
+LoginPage -
+DashboardPage -
 
 
 
