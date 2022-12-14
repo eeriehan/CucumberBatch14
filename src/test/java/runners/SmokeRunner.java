@@ -15,10 +15,11 @@ import org.junit.runner.RunWith;
         //when we set dry run to false, it starts execution again
         dryRun = false,
         tags = "@tc1101",
-        //to remove irrelavant information from console, you need to set monochrome to true
+        //to remove irrelevant information from console, you need to set monochrome to true
         monochrome = true,
         //pretty keywords prints the steps in the console to increase readability
-        plugin = {"pretty"}
+        //to generate the reports we need plugin of runner class
+        plugin = {"pretty", "html:target/cucumber.html", "json:target/cucumber.json"}
 
 )
 public class SmokeRunner {

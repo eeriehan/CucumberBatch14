@@ -87,7 +87,7 @@ Class 4 -
     glue - the path of our step definitions package
     dryRun - if we set it to true, it stops actual execution and scans all the steps quickly
     and provide us missing step definition
-    monochrome - to remove irrelavant information from the console
+    monochrome - to remove irrelevant information from the console
     plugin - pretty - to print the steps in the console
     tags - to group the scenario for specific type of execution
 
@@ -100,12 +100,84 @@ in simple language, QA's write all the locators of the page in respective class
 LoginPage -
 DashboardPage -
 
+Class 5 -
+        Recap - runner class - to run our test cases as per the requirement
+                                to generate missing steps
+                                to print the steps into the console
+                                to generate the report
+
+        Page object model - to have organised code and easy to maintain structure
+        according to it, we create separate class (page) according to the
+        screens available in the application and keep all the locators of this page
+        in it
+
+Hooks - we write pre condition and post condition using hooks in cucumber
+    @Before - pre condition needs to be mentioned in this
+    @After - post condition needs to be mentioned in this
+
+Rules - Hooks class must be created inside steps package
+
+Background - it is applicable only for one feature file
+             it means for every feature file background will be different
+             steps which are common among all the scenarios of that feature file
+             will be taken into background but make sure the flow is not broken.
+             if the flow breaks, then we cannot take steps in background after that
 
 
+Hooks VS background
+
+Hooks are applicable for whole project (for all the feature files)
+Background is applicable for one feature file and varies from file to file
+First Hooks execute then background execute then scenario execute
 
 
+class 6 -
+
+Recap   -
+    Page object model with page initializer class
+    in this initializer class, we initialize all the objects of page classes and call the method in common methods class in openbrowser method
 
 
+We created a collection point in steps classes  -
+    Methods call from common method, locators call from respective page classes using object of that class
+
+    Background - same steps in feature file among all the scenarios should be a part of ini
+    Hooks   -   pre-condition and post-condition for the entire project
+                here we use 2 hooks - @Before
+                                      @After
+
+    Parameterization testing    -
+        We can one add employee using feature file -
+            'instead of passing hardcoded data, we pass values inside the scenario such as "abc", "xyz" etc'
+
+        to increase the scope of testing, we use data driven testing concept instead of scenario, we use scenario
+        outline with examples table
+
+        in examples table, we pass multiple data sets using keys and values
+
+Data table -
+    it allows us to pass multiple sets of data without executing background
+
+    outline     -   Examples table  - hooks and background execute every time as per the data set
+    Scenario    -   Data table      - hooks and background execute jest one time
+
+
+working with excel
+    .xls    -   HSSF
+    .xlsx   -   XSSF
+
+
+Class 7 -
+    Recap - parameters passing for adding the employee
+    --  earlier approach was - hardcoded data
+    --  passing one set of data from feature file
+    --  scenario outline - examples table )for passing multiple data sets)
+    --  data table - hooks, background execute one time for multiple data sets
+    --  excel - to pass large volume of data
+    --
+
+cucumber accepts array of byte for screenshots
+when we generate any report, this should be under target folder
 
 
 

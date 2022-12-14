@@ -4,17 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77bbcf9d-3f2e-4615-a3e8-8a9ee09c9bfa" name="Changes" comment="1st push">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/EmployeeSearchSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/EmployeeSearch.feature" afterDir="false" />
+    <list default="true" id="77bbcf9d-3f2e-4615-a3e8-8a9ee09c9bfa" name="Changes" comment="2nd push">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/AddEmployeePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/EmployeeListPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/PageInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/ExcelReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/batch14excel.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Note" beforeDir="false" afterPath="$PROJECT_DIR$/Note" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Note" beforeDir="false" afterPath="$PROJECT_DIR$/CucumberNote" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/DashboardSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/DashboardSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/EmployeeSearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/EmployeeSearchSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddEmployee.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddEmployee.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Dashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Dashboard.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/EmployeeSearch.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/EmployeeSearch.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,19 +53,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/hanjo/IdeaProjects/CucumberBatch14/src/test/java/CucumberTool&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/hanjo/IdeaProjects/CucumberBatch14/src/test/java/CucumberTool",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.17931035",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hanjo\IdeaProjects\CucumberBatch14\src\test\java\CucumberTool" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hanjo\IdeaProjects\CucumberBatch14\src\test\resources\testdata" />
       <recent name="C:\Users\hanjo\IdeaProjects\CucumberBatch14\src\test\resources\features" />
     </key>
   </component>
@@ -185,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670430410298</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2nd push">
+      <created>1670469825531</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670469825531</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +225,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st push" />
-    <option name="LAST_COMMIT_MESSAGE" value="1st push" />
+    <MESSAGE value="2nd push" />
+    <option name="LAST_COMMIT_MESSAGE" value="2nd push" />
   </component>
 </project>
