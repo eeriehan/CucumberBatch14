@@ -179,6 +179,32 @@ Class 7 -
 cucumber accepts array of byte for screenshots
 when we generate any report, this should be under target folder
 
+Class 8 -
+    Recap -
+        screenshot method - in cucumber it accept array of byte
+        to get the unique screenshot name, we have implemented time-stamp method
+        we used Scenario class of cucumber to ger the details of execution
+        to generate report - we use html plugin from runner class
+        reports always generate in larger folder
+        we execute our code from pom.xml file, to achieve this we have used Maven surefire plugin
+
+        maven cucumber reporting plugin we use to get more detailed and colorful report
+
+    Log files - When we execute out code, we need to sharpen our debugging skills to have quick
+                information about every step of execution, we need messages in the form of report.
+                To get the details added by us, we need to create log files.
+                To create this log file, we use log4j concept
+
+    Maven lifeCycle -
+                    compile -   source code converts into binary code
+                    package -   code will be packaged into jar files
+                    install -   jars will be installed to local repo .m2
+                    deploy  -   here, jars will go to remote repo
+                  * test    -   code will be tested in this lifecycle
+                  * clean   -   this will clean your Target folder
+
+    When you run [test]   ->    this will execute [compile]   ->   [install]   ->   [deploy]   ->   [test]
+
 
 
 

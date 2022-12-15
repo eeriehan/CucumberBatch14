@@ -3,6 +3,7 @@ package utils;
 import io.github.bonigarcia.wdm.Config;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -39,9 +40,17 @@ public class CommonMethods extends PageInitializer {
         driver.get(ConfigReader.getPropertyValue("url"));
         driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
         intializePageObjects();
+
+        //to configure the file and pattern of it, we need to call the file
+        DOMConfigurator.configure("log4j.xml");
+        Log.startTestCase("My first test case is Login test");
+        Log.info("My login test is going on");
+        Log.warning("My test case might be failed");
     }
 
     public static void closeBrowser() {
+        Log.info("My test case is about to complete");
+        Log.endTestCase("This is my login test again");
         driver.quit();
     }
 
