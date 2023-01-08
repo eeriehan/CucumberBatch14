@@ -16,6 +16,7 @@ User story - Search an employee
 
 Search by id
 
+
 Given  user navigates to HRMS application
 When   user enters valid username and password
 And    user clicks on login button
@@ -205,6 +206,29 @@ Class 8 -
 
     When you run [test]   ->    this will execute [compile]   ->   [install]   ->   [deploy]   ->   [test]
 
+    Database Testing:
 
+    1. Created database utility:
+        1. to get object of resulset
+        2. to get object of resultsetmetadata
+        3. to retrieve data from resultset and store in ListOfMaps
+
+    Now we can write test cases:
+        1. feature file
+        2. write steps in step definition
+
+    finally {
+
+                try {
+                    if (statement != null) {
+                        statement.close();
+                    }
+                    if (conn != null) {
+                        conn.close();
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
 
 
