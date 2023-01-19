@@ -1,0 +1,534 @@
+API  //  POSTMAN //  REST ASSURED // AUTOMATION
+
+Class 1
+
+	API -	Application Programming Interface
+
+		Client 	- the one whoe send the request
+		Server	- the one who respond to the request
+		API		- communicates in between client and server
+		Request	- send by client (information asked)
+		Response	- (Answer from the server/DB)
+
+	Presentation layer			- it is front-end/UI which we see on the screen
+	Application layer/Business layer 	- it is a layer where the logic of the application has been written
+	Data layer					- it is the layer where data exists or we call it Database
+
+	Client - Server architecture
+
+	Presentation layer	- Client exist
+	Application layer		- logic exist of the application
+	Data layer			- data exist
+
+	----------------------------------------------------------
+	1-tier architecture
+		-When presentation layer, application layer, data layer available at one place,
+		 we call it 1-tier architecture.
+
+		-Examples = calculator, MS Word, MS Paint etc. desktop based application / standalone application.
+
+	----------------------------------------------------------
+	2-tier architecture
+		-When presentation layer is available at client end and application and data layer is available at server end
+
+		-Examples = pizza hut, dominos, subway, walmart, starbucks etc
+
+	----------------------------------------------------------
+	3-tier architecture
+		-When the presentation layer is available at client end
+		-Application layer is abailable at another end
+		-and Data layer is available at third end
+
+ 		-Examples = E-commerce website companies, airline booking site, john deer parts, local bank, syntax hrm etc
+
+	----------------------------------------------------------
+	N-tier architecture	** Most of services **
+		-presendtation layer
+		-application layer
+		-data layer
+
+		-Examples = Amazon, google, facebook, twitter, instagram etc
+
+
+Class 2
+
+	----------------------------------------------------------
+
+*Recap*	Client - server architecture
+			 - 1 tier
+			 - 2 tier
+			 - 3 tier
+			 - n tier
+
+	Why do we need API?	-	to make the systems developed in different languages to communicate
+					-	to maintain the security of the data among the applications
+
+
+	FrontEndTesting/Selenium	- Created
+						- Retrieve
+						- Update
+						- Delete		C R U D operation
+
+	*API test comes in between
+
+	BackEndTesting/SQL		- Created
+						- Retrieve
+						- Update
+						- Delete		C R U D operation
+
+	----------------------------------------------------------
+
+	Details we need to perform API testing
+	-	the location of API	->	End point
+							End point - It helps us in getting specific information from bunch of information
+
+	DNS - Domain Name Server
+
+	Web sevices - API's which are hosted over the internet are called web servces
+			- every web services is an API by-default
+
+
+	Why do we need the test - To find the glitch in the system
+
+	2-TYPES of Web Servies	-	REST[Re-presentational State Transfer] / 90% of applications will work with rest (we will learn and work with REST API)
+						SOAP[Simple object Access Protocol]
+
+
+	Documents we need to perform testing
+		for UI	-	SRS - software requirment specification
+		for API	-	SWAGGER
+
+	API location - end point
+		example01/12/2023 :	Address	-	specific item
+						Airline	-	specific flight
+						Amazon	-	specific type user
+
+	Base URI 	- uniform resource identifier
+	URL		- uniform resource locator
+	End point 	-
+
+	Base URI	- uniform resource identifier (API exact location to fetch the data)
+	End point	- to get specific information from group of information
+
+	*Base URI - URL + Endpoint
+
+	HTTP	- hypertext transfer protocol
+			- it is a protocol which allows websites to communicate over the internet
+
+	some basic methods of http, we need to follow
+		C - POST
+		R - GET
+		U - PUT
+		D - DELETE
+
+	First request -
+		To create ADMIN user into the system
+		Base URI - Base URL + end point
+		Base URI - hrm.syntaxtechs.net/syntaxapi/api/createUser.php
+
+	pay load/body  - here we send the data which we need to add in the database
+
+	JSON - key and value, use JSON format to send the payload/body	- just like map
+
+	Body - example
+		{
+  		 "name": "batch14",
+  		 "email": "batch14@test.com",
+  		 "password": "Test@123"
+		}
+
+	content type - application/JSON
+	Type of request - post
+
+	expected status code - 201 for post
+
+
+
+
+
+
+Class 3
+
+	----------------------------------------------------------
+
+
+C	- Create	- POST
+R	- Retrieve	- GET
+U	- Update	- PUT
+D	- Delete	- DELETE
+
+Example of the house - for Base URI
+
+base url
+endpoint
+
+base URI = base URL + end point
+
+Swagger - developer provide this document
+
+POST METHOD -
+
+To prepare the request -
+
+Base URI -
+Body/payload - available in json format ( key and value )
+Type of method - POST
+Content - type - application / JSON
+
+Response - 201 status code
+
+POSTMAN -
+	In body, provide all the keys which are available in Swagger document, DONT DELETE/ADD any additional key
+
+2-types of API -	Public API
+			Private API
+
+API keeps the security	HOW?
+
+process of authentication and authorization
+
+we will work mainly with private API-
+
+
+in private API's, we have 2-types of applicaiton
+
+Stateful Application - 	It is the application where the state of the server memory is true,
+				this application stores the session ID in server memory
+				every time a user makes a request, he has to send the credentials but if it is stored
+				in server memory, he doesn't need to provide this details
+
+				example - amazon, instagram, facebook etc
+
+Stateless Application -	When the state of the server memory is false, it is stateless application
+				everytime response will be passed to the client / user in terms of token
+				Stateless is more secure than Stateful application
+
+-CREATE A REQUEST TO GENERATE A TOKEN
+
+		Base URI 		- hrm.syntaxtechs.net/syntaxapi/api/generatetoken.php
+		Type of method 	- Post
+		Payload / body 	-
+
+		{
+  		 "name": "batch14",
+  		 "email": "batch14@test.com",
+  		 "password": "Test@123"
+		}
+
+
+		Content - type - application/json
+
+response - 200 status code
+
+json web token -JWT (has 3 parts)
+
+Header	- type of token, algorithm used to create the token
+Payload	- issuer, issue time, expire time, ID
+Signature	- same message has been conveyed to the client
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.
+eyJpYXQiOjE2NzM3MTk2NjQsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTY3Mzc2Mjg2NCwidXNlcklkIjoiNDc1NSJ9.
+JAgVfUVnTojp9WlRMmQfVK17WxZC059Vu1V7Xng4lY8
+
+	---------------------------------------------------------------------------------
+
+
+--CREATE A NORMAL EMPLOYEE
+
+Base URI - hrm.syntaxtechs.net/syntaxapi/api/createEmployee.php
+
+type of method - post
+
+payload / body -
+
+{
+  "emp_firstname": "Fudas",
+  "emp_lastname": "Asadif",
+  "emp_middle_name": "Miko",
+  "emp_gender": "M",
+  "emp_birthday": "2000-01-14",
+  "emp_status": "confirmed",
+  "emp_job_title": "QA Engineer"
+}
+
+headers -
+
+content type = application/json
+
+token - authorization -> select, bearer token -> add token
+
+JWT token has 3-types	- (bearer), MAC, grants
+
+Thumb rule**
+After (p)create an employee   -> cross check it
+After (u)updating an employee -> cross check it
+After (d)deleting an employee -> cross check it
+
+possible cases
+either database has not added gender
+database has added it but api for create an employee is not able to show it here
+
+
+
+-GET ONE EMPLOYEE
+
+
+​Base URI - hrm.syntaxtechs.net/syntaxapi/api/getOneEmployee.php
+type of method - GET
+query parameter -
+
+employee_id 46018A
+
+header - content - type - application/json
+
+token
+
+*In case if you are working with stateful application, then provide basic auth instead of bearer token
+
+
+
+
+hrm.syntaxtechs.net/syntaxapi/api/getAllEmployees.php
+
+
+Class 4 -
+
+Recap - 2 types of API
+		-Public
+		-private
+
+	- in private API
+		-Authorization and authenticatioin
+			-who are you
+			-are you aloowed?
+			-show your ID
+			-what access you have
+
+		-Stateful application and Stateless application
+
+
+	JWT - Json Web Token
+		-header, payload, signature
+
+		-(bearer), MAC, grants
+
+
+
+	---------------------------------------------------------------------------------
+-Get Job Titles
+	type of request 	- GET
+	Base URI		- hrm.syntaxtechs.net/syntaxapi/api/jobTitle.php
+	Authorization	- token
+
+-Update employee
+	type of request 	- PUT
+	Base URI		- hrm.syntaxtechs.net/syntaxapi/api/updateEmployee.php
+	Authorization	- token
+	body -
+{
+  "employee_id": "string",
+  "emp_firstname": "string",
+  "emp_lastname": "string",
+  "emp_middle_name": "string",
+  "emp_gender": "Enter M for male or F for female",
+  "emp_birthday": "2023-01-15",
+  "emp_status": "string",
+  "emp_job_title": "string"
+}
+
+
+-Partial employee details update
+
+	type of request 	- PATCH
+	Base URI		- hrm.syntaxtechs.net/syntaxapi/api/updatePartialEmplyeesDetails.php
+	Authorization	- token
+	Header		- content type
+	body - **Remove lines you dont need to update.**
+{
+  "employee_id": "string",
+  "emp_firstname": "string",
+  "emp_lastname": "string",
+  "emp_middle_name": "string",
+  "emp_gender": "Enter M for male or F for female",
+  "emp_birthday": "2023-01-15",
+  "emp_status": "string",
+  "emp_job_title": "string"
+}
+
+in put we get 200 - it replaces whole data and not adding anything new
+in patch we get 201 because we add a patch here in the existing data
+
+
+
+-Delete an employee
+
+	type of request 	- Delete
+	Base URI		- hrm.syntaxtechs.net/syntaxapi/api/deleteEmployee.php
+
+	employee_id	*need to be in the body
+
+
+
+
+
+cookies 	- it is a small block of code created by a web server while a user is browsing a website or
+		application on the computer, it is saving the activity.
+
+why use cookies?
+	- track your information - for advertisement purpose
+	- remember your informaiton
+
+in house API - for internal use
+third party API - for selling purpose
+
+
+DEV
+QA
+STAGING
+PRODUCTION
+
+
+Test case
+	Create an employee
+	get the created employee
+	verify it
+	update the employee
+	get the updated employee
+	update partial details of the employee
+	get this employee
+
+	Test has been written in Javascript language(JS)
+
+	while calling the method when we use wnippet, here pm stands for postman object
+
+	here we use chai assertion library from where we call our test
+
+
+whatever comes with ? we call them query parameter
+
+whatever comes with / we call them path parameter
+
+
+
+
+
+Class 5 -
+
+Recap -
+Json format we use to convert response body into json format to extract/retrieve any
+specific value from the body we need this json object to verify the specific value of the
+key in response body, we need json object
+
+NOTE: we can verify the values and keys without json as well, but if client is needed
+we need to write functions/method to perform some additional verification
+
+pre-request scripts can also be written under test as having one place to write all types
+of functions is easy to maintain. sometimes, we gent ready made snippet from the postman,
+however sometimes, we need to write specific functions to fulfill the requirement
+
+pm.expect is the method you use to verify any property/attribute/key/value from the response
+
+
+**Jscript syntax**
+
+pm.expect		- to verify
+function()	- to specify the method in java
+pm.test		- to write the test
+
+pm.test("printing the response json body", function(){
+    const jsonFormat =JSON.parse(responseBody)
+    console.log(jsonFormat)
+});
+
+console.log	- to print something in the console
+const		- it is a variable which is used to store values
+"name"		- it is used to provide function name
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ from generate token TEST
+console.log("the request has been executed")
+
+// get the response from the body
+responseBody=pm.response.json()
+
+console.log(responseBody)
+
+// retrieve the JUST token from the body
+console.log(responseBody.token)
+
+
+
+
+-------------------------------------------------------------------------
+
+API Automation
+
+**REST Assured - is a DSL ( [API] Domain Specific Language )
+	-it is a JAVA library used to automate API's
+
+Rest assured follows Behavioral Driven Development ( BDD )
+
+	in cucumber		-Given -	pre condition
+				-When	 -	perform actions
+				-Then  -	expected output / assertions / verifications
+
+in Rest assured API	-Given - prepare the request
+				-When	 - making the request / sending the request ( hitting the endpoint )
+				-Then	 - verifying / assertions / expected results
+
+rest web service allows us to send / receive data in json format which contains key value pair
+
+
+
+
+
+Class 6 -
+
+Recap -
+
+	How to write our own function in postman
+
+	pm.  - postman
+	test - to perform assertions
+
+
+pm.expect	- validation / verification
+
+JSON		- const abc = jSON.parse(responseBody)
+
+
+Automation of API - we use cucumberBatch14 project for this ( NOTE: :p )
+
+Rest assured - java liabrary for api
+
+supports BDD approach
+-Given	- prepare request
+-When		- to hit the end point
+-Then		- verifying the response
+
+base URI = base URI
+
+-Hamcrest matchers.
+    - it is a class that contains methods to perform assertions
+
+    JsonPath    <- class
+    jsonPath()  <- it is function/method belongs to JsonPath class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

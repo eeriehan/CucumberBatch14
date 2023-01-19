@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77bbcf9d-3f2e-4615-a3e8-8a9ee09c9bfa" name="Changes" comment="4th push - final">
-      <change afterPath="$PROJECT_DIR$/screenshots/failed/Valid admin login 2022-12-15-02-19-57.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/passed/Valid admin login 2022-12-15-02-20-26.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/passed/Valid admin login 2022-12-17-10-16-22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/DatabaseSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/DBUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestAssuredAPInote.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/passed/Adding employee and verifying it is stored in database 2023-01-08-15-31-49.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/APIPackage/HardCodedExamples.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CucumberNote" beforeDir="false" afterPath="$PROJECT_DIR$/CucumberNote" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AddEmployeePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AddEmployeePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddEmployee.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddEmployee.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,71 +59,66 @@
       <recent name="C:\Users\hanjo\IdeaProjects\CucumberBatch14\src\test\resources\features" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SmokeRunner">
-    <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/CucumberTool/Login.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="CucumberBatch14" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Login" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Verify dashboard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/CucumberTool/Dashboard.feature" />
-      <option name="GLUE" value="CucumberTool" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="CucumberBatch14" />
-      <option name="NAME_FILTER" value="^Verify dashboard$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify dashboard$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify dashboard" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FailedRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.HardCodedExamples">
+    <configuration name="HardCodedExamples" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CucumberBatch14" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runners.*" />
+          <option name="PATTERN" value="APIPackage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.FailedRunner" />
+      <option name="PACKAGE_NAME" value="APIPackage" />
+      <option name="MAIN_CLASS_NAME" value="APIPackage.HardCodedExamples" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunnerClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HardCodedExamples.b_getOneEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CucumberBatch14" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CucumberTool.*" />
+          <option name="PATTERN" value="APIPackage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="CucumberTool" />
-      <option name="MAIN_CLASS_NAME" value="CucumberTool.RunnerClass" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="APIPackage" />
+      <option name="MAIN_CLASS_NAME" value="APIPackage.HardCodedExamples" />
+      <option name="METHOD_NAME" value="b_getOneEmployee" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HardCodedExamples.createEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CucumberBatch14" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIPackage" />
+      <option name="MAIN_CLASS_NAME" value="APIPackage.HardCodedExamples" />
+      <option name="METHOD_NAME" value="createEmployee" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HardCodedExamples.getOneEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CucumberBatch14" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIPackage" />
+      <option name="MAIN_CLASS_NAME" value="APIPackage.HardCodedExamples" />
+      <option name="METHOD_NAME" value="getOneEmployee" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HardCodedExamples" />
+        <item itemvalue="JUnit.HardCodedExamples.b_getOneEmployee" />
+        <item itemvalue="JUnit.HardCodedExamples.createEmployee" />
+        <item itemvalue="JUnit.HardCodedExamples.getOneEmployee" />
         <item itemvalue="JUnit.SmokeRunner" />
-        <item itemvalue="JUnit.FailedRunner" />
-        <item itemvalue="JUnit.RunnerClass" />
-        <item itemvalue="Cucumber Java.Scenario: Verify dashboard" />
-        <item itemvalue="Cucumber Java.Feature: Login" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671072950754</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="4th push - final">
+      <created>1673210062749</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673210062749</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
