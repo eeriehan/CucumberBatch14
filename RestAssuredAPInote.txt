@@ -291,7 +291,7 @@ token
 hrm.syntaxtechs.net/syntaxapi/api/getAllEmployees.php
 
 
-Class 4 -
+Class 4 --------------------------------------------------------------------------------------------
 
 Recap - 2 types of API
 		-Public
@@ -412,7 +412,7 @@ whatever comes with / we call them path parameter
 
 
 
-Class 5 -
+Class 5 -------------------------------------------------------------------------------------
 
 Recap -
 Json format we use to convert response body into json format to extract/retrieve any
@@ -483,7 +483,7 @@ rest web service allows us to send / receive data in json format which contains 
 
 
 
-Class 6 -
+Class 6 ---------------------------------------------------------------------------
 
 Recap -
 
@@ -516,10 +516,44 @@ base URI = base URI
     jsonPath()  <- it is function/method belongs to JsonPath class
 
 
+Class 7 -----------------------------------------------------------------------------------------
+
+recap - Rest assured API -
+        DSL - domain specific language
+        it allows us to send / receive data in json format
+
+        base uri = base url
+
+        rest assured api follows BDD approach
+        given - to prepare the request
+        When - send the request / hitting the end point
+        Then - assertion / verification
+
+        to prepare the request -
+            RequestSpecification - we use to prepare the request
+            Response - to store the response body after hitting the end point
+
+            along with given, we provide headers, query parameters, body etc to prepare
+            the request as per the type of method (get, post)
+
+        JSONPath    - class
+        jsonPath()  - to provide the functionality of assertions
+
+        Hamcrest matchers - we use it for assertions
+
+        we use @Test annotation from junit to run all the test cases but, to execute them
+        alphabetically, we use FixMethodOrder.
+
+        C   -   Create the employee
+        R   -   Retrieved the created employee
+        U   -   Updated the employee
+        D   -   Retrieved updated employee
+
+under steps package, we have hooks(pre-condition), when we write our steps for API under it,
+hooks will execute, we don't want to execute hooks for API since hooks are for UI
 
 
-
-
+in generate token steps class, we have written the method for generating
 
 
 

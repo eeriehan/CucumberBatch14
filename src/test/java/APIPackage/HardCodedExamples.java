@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import utils.APIPayloadConstant;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
@@ -87,16 +88,7 @@ public class HardCodedExamples {
     public void c_updateEmployee(){
         RequestSpecification request = given().header("Authorization", token)
                 .header("Content-Type", "application/json").
-                body("{\n" +
-                        "  \"employee_id\": \""+employee_id+"\",\n" +
-                        "  \"emp_firstname\": \"HanJoon\",\n" +
-                        "  \"emp_lastname\": \"Cho\",\n" +
-                        "  \"emp_middle_name\": \"eerie\",\n" +
-                        "  \"emp_gender\": \"M\",\n" +
-                        "  \"emp_birthday\": \"1986-10-10\",\n" +
-                        "  \"emp_status\": \"probation\",\n" +
-                        "  \"emp_job_title\": \"manager\"\n" +
-                        "}");
+                body(APIPayloadConstant.createEmployeePayload());
 
         Response response = request.when().put("/updateEmployee.php");
 
