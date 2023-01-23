@@ -4,7 +4,7 @@ Class 1
 
 	API -	Application Programming Interface
 
-		Client 	- the one whoe send the request
+		Client 	- the one who send the request
 		Server	- the one who respond to the request
 		API		- communicates in between client and server
 		Request	- send by client (information asked)
@@ -31,19 +31,19 @@ Class 1
 	2-tier architecture
 		-When presentation layer is available at client end and application and data layer is available at server end
 
-		-Examples = pizza hut, dominos, subway, walmart, starbucks etc
+		-Examples = pizza hut, domino's, subway, walmart, starbucks etc
 
 	----------------------------------------------------------
 	3-tier architecture
 		-When the presentation layer is available at client end
-		-Application layer is abailable at another end
+		-Application layer is available at another end
 		-and Data layer is available at third end
 
  		-Examples = E-commerce website companies, airline booking site, john deer parts, local bank, syntax hrm etc
 
 	----------------------------------------------------------
 	N-tier architecture	** Most of services **
-		-presendtation layer
+		-presentation layer
 		-application layer
 		-data layer
 
@@ -84,18 +84,18 @@ Class 2
 
 	DNS - Domain Name Server
 
-	Web sevices - API's which are hosted over the internet are called web servces
+	Web services - API's which are hosted over the internet are called web servces
 			- every web services is an API by-default
 
 
 	Why do we need the test - To find the glitch in the system
 
-	2-TYPES of Web Servies	-	REST[Re-presentational State Transfer] / 90% of applications will work with rest (we will learn and work with REST API)
+	2-TYPES of Web-Services	-	REST[Re-presentational State Transfer] / 90% of applications will work with rest (we will learn and work with REST API)
 						SOAP[Simple object Access Protocol]
 
 
 	Documents we need to perform testing
-		for UI	-	SRS - software requirment specification
+		for UI	-	SRS - software requirement specification
 		for API	-	SWAGGER
 
 	API location - end point
@@ -178,7 +178,7 @@ Content - type - application / JSON
 Response - 201 status code
 
 POSTMAN -
-	In body, provide all the keys which are available in Swagger document, DONT DELETE/ADD any additional key
+	In body, provide all the keys which are available in Swagger document, DON'T DELETE/ADD any additional key
 
 2-types of API -	Public API
 			Private API
@@ -190,7 +190,7 @@ process of authentication and authorization
 we will work mainly with private API-
 
 
-in private API's, we have 2-types of applicaiton
+in private API's, we have 2-types of application
 
 Stateful Application - 	It is the application where the state of the server memory is true,
 				this application stores the session ID in server memory
@@ -298,9 +298,9 @@ Recap - 2 types of API
 		-private
 
 	- in private API
-		-Authorization and authenticatioin
+		-Authorization and authentication
 			-who are you
-			-are you aloowed?
+			-are you allowed?
 			-show your ID
 			-what access you have
 
@@ -343,7 +343,7 @@ Recap - 2 types of API
 	Base URI		- hrm.syntaxtechs.net/syntaxapi/api/updatePartialEmplyeesDetails.php
 	Authorization	- token
 	Header		- content type
-	body - **Remove lines you dont need to update.**
+	body - **Remove lines you don't need to update.**
 {
   "employee_id": "string",
   "emp_firstname": "string",
@@ -376,7 +376,7 @@ cookies 	- it is a small block of code created by a web server while a user is b
 
 why use cookies?
 	- track your information - for advertisement purpose
-	- remember your informaiton
+	- remember your information
 
 in house API - for internal use
 third party API - for selling purpose
@@ -500,7 +500,7 @@ JSON		- const abc = jSON.parse(responseBody)
 
 Automation of API - we use cucumberBatch14 project for this ( NOTE: :p )
 
-Rest assured - java liabrary for api
+Rest assured - java library for api
 
 supports BDD approach
 -Given	- prepare request
@@ -553,8 +553,35 @@ under steps package, we have hooks(pre-condition), when we write our steps for A
 hooks will execute, we don't want to execute hooks for API since hooks are for UI
 
 
-in generate token steps class, we have written the method for generating
+in generate token steps class, we have written the method for generating the token
 
+
+Class 8 -
+
+recap -
+    - integrated (added)Rest assured with cucumber
+    - to add rest assured we added feature file
+    - then API steps package, we don't want to execute hooks
+    - to generate token automatically everytime, we implemented a class
+    - API runner class to run only API test cases
+    - API constant class to pass all the constants of the API
+    - API Payload constant class to pass the body/payload
+
+NOW TALK ABOUT OPERATIONS:::::
+
+C - we wrote a scenario for creating the employee and verify it
+R - retrieved the created employee and verify it
+
+We will do
+U - update the employee and we will verify it
+
+After performing the operations, we identified one more need to
+pass body/payload in easy format, so we implemented JSON format in APIPayload constant class
+
+HOMEWORK --- HOMEWORK -- HOMEWORK -- HOMEWORK -- HOMEWORK --
+
+update the existing employee details - PUT
+and verify the data - GET
 
 
 

@@ -4,16 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77bbcf9d-3f2e-4615-a3e8-8a9ee09c9bfa" name="Changes" comment="5th commit w/dbSQL, HardAPI">
-      <change afterPath="$PROJECT_DIR$/src/test/java/APISteps/APIWorkFlowSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/APISteps/GenerateTokenSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/APIRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/APIConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/APIPayloadConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/APIWorkflow.feature" afterDir="false" />
+    <list default="true" id="77bbcf9d-3f2e-4615-a3e8-8a9ee09c9bfa" name="Changes" comment="6th commit w/API testing automation part1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestAssuredAPInote.txt" beforeDir="false" afterPath="$PROJECT_DIR$/RestAssuredAPInote.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/APIPackage/HardCodedExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APIPackage/HardCodedExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/failed/Valid admin login 2022-12-14-19-38-43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/failed/Valid admin login 2022-12-15-02-19-57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/passed/Adding employee and verifying it is stored in database 2023-01-08-15-31-49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid admin login 2022-12-14-19-39-00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid admin login 2022-12-14-19-40-49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid admin login 2022-12-14-19-47-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid admin login 2022-12-14-19-47-55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid admin login 2022-12-14-21-15-15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid admin login 2022-12-15-02-20-26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/passed/Valid admin login 2022-12-17-10-16-22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/APISteps/APIWorkFlowSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APISteps/APIWorkFlowSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/APIRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/APIRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/APIPayloadConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/APIPayloadConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/APIWorkflow.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/APIWorkflow.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +72,26 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.APIRunner">
+    <configuration name="Scenario: API test case for creating the employee using highly dynamic body" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/APIWorkflow.feature" />
+      <option name="GLUE" value="APISteps steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CucumberBatch14" />
+      <option name="NAME_FILTER" value="^API test case for creating the employee using highly dynamic body$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^API test case for creating the employee using highly dynamic body$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: API test case for creating the employee using highly dynamic body" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="APIRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CucumberBatch14" />
       <extension name="coverage">
@@ -110,22 +138,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HardCodedExamples.createEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CucumberBatch14" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="APIPackage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="APIPackage" />
-      <option name="MAIN_CLASS_NAME" value="APIPackage.HardCodedExamples" />
-      <option name="METHOD_NAME" value="createEmployee" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SmokeRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CucumberBatch14" />
       <extension name="coverage">
@@ -144,10 +156,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.APIRunner" />
+        <item itemvalue="Cucumber Java.Scenario: API test case for creating the employee using highly dynamic body" />
         <item itemvalue="JUnit.SmokeRunner" />
         <item itemvalue="JUnit.HardCodedExamples" />
         <item itemvalue="JUnit.HardCodedExamples.b_getOneEmployee" />
-        <item itemvalue="JUnit.HardCodedExamples.createEmployee" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674097377289</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="6th commit w/API testing automation part1">
+      <created>1674330517128</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674330517128</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,6 +256,7 @@
     <MESSAGE value="3nd push - still confused" />
     <MESSAGE value="4th push - final" />
     <MESSAGE value="5th commit w/dbSQL, HardAPI" />
-    <option name="LAST_COMMIT_MESSAGE" value="5th commit w/dbSQL, HardAPI" />
+    <MESSAGE value="6th commit w/API testing automation part1" />
+    <option name="LAST_COMMIT_MESSAGE" value="6th commit w/API testing automation part1" />
   </component>
 </project>

@@ -117,7 +117,19 @@ public class APIWorkFlowSteps {
                 body(APIPayloadConstant.createEmployeeJsonBody());
     }
 
-
+    @Given("a request is prepared for creating an employee with dynamic data " +
+            "{string} , {string}  , {string} , {string} , {string} , {string} , {string}")
+    public void a_request_is_prepared_for_creating_an_employee_with_dynamic_data
+            (String firstname, String lastname, String middlename,
+             String gender, String dob,
+             String empStatus, String jobTitle) {
+        //we will write code here now
+        request = given().
+                header(APIConstants.Header_Key_Content_Type, APIConstants.Header_Value_Content_Type).
+                header(APIConstants.Header_Key_Authorization, GenerateTokenSteps.token).
+                body(APIPayloadConstant.createEmployeePayloadDynamic
+                        (firstname, lastname, middlename, gender, dob, empStatus, jobTitle));
+    }
 }
 
 /**

@@ -30,3 +30,11 @@ Feature: API workflow test
     Then the status code for creating an employee is 201
     And the response body contains key "Message" and value "Employee Created"
     And the employee id "Employee.employee_id" is stored as global to be used for other request
+
+  @apidynamic
+  Scenario: API test case for creating the employee using highly dynamic body
+    Given a request is prepared for creating an employee with dynamic data "Fudas" , "Asadif"  , "Miko" , "M" , "2000-01-14" , "confirmed" , "QA Engineer"
+    When a POST call is made to create an employee
+    Then the status code for creating an employee is 201
+    And the response body contains key "Message" and value "Employee Created"
+    And the employee id "Employee.employee_id" is stored as global to be used for other request
