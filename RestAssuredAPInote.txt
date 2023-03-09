@@ -584,6 +584,27 @@ update the existing employee details - PUT
 and verify the data - GET
 
 
+--------------------------------------------------------------------------------------------------
+
+Database Automation (SQL)
+
+What is the agenda?
+-- to automate the SQL query and verify the data which is coming from database and verify it to the data
+    which is available on UI
+
+We will add employee in UI and write query to get it from DataBase
+
+Setup to get the data from back-end ( 3 things we need to focus )
+-- Connection // variable is holding that connection
+-- Statement // it helps us to execute query
+-- ResultSet // to store the result
+ -- resultsetMetaData // to get the data from resultset, so that we can fetch the column names and their values
+
+after getting resultsetMetaData, we eed to get all the column keys and values
+
+
+
+Select * from table where employee_id='123';
 
 
 

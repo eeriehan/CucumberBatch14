@@ -29,15 +29,7 @@ public class APIWorkFlowSteps {
         request = given().
                 header(APIConstants.Header_Key_Content_Type, APIConstants.Header_Value_Content_Type).
                 header(APIConstants.Header_Key_Authorization, GenerateTokenSteps.token).
-                body("{\n" +
-                        "  \"emp_firstname\": \"Fudas\",\n" +
-                        "  \"emp_lastname\": \"Asadif\",\n" +
-                        "  \"emp_middle_name\": \"Miko\",\n" +
-                        "  \"emp_gender\": \"M\",\n" +
-                        "  \"emp_birthday\": \"2000-01-14\",\n" +
-                        "  \"emp_status\": \"confirmed\",\n" +
-                        "  \"emp_job_title\": \"QA Engineer\"\n" +
-                        "}");
+                body(APIPayloadConstant.createEmployeePayload());
     }
 
     @When("a POST call is made to create an employee")

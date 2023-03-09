@@ -2,8 +2,13 @@ package utils;
 
 import org.json.JSONObject;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 public class APIPayloadConstant {
 
+    //a simple methods that returns a string
     public static String createEmployeePayload(){
         String createEmployeePayload =
                 "{\n" +
@@ -17,7 +22,7 @@ public class APIPayloadConstant {
                         "}";
         return createEmployeePayload;
     }
-
+    //a method to create a json object and returning the value as string
     public static String createEmployeeJsonBody(){
         JSONObject obj = new JSONObject();
         obj.put("emp_firstname", "sara");
@@ -29,7 +34,7 @@ public class APIPayloadConstant {
         obj.put("emp_job_title","QA Engineer");
         return obj.toString();
     }
-
+    // values are being passed as parameter
     public static String createEmployeePayloadDynamic(String firstname, String lastname, String middlename,
                                                       String gender, String dob,
                                                       String empStatus, String jobTitle){
@@ -53,5 +58,10 @@ public class APIPayloadConstant {
         return adminPayload;
     }
 
+    public static String readPayloadFile(String filePath) throws IOException{
+        String data = "";
+        data = new String(Files.readAllBytes(Paths.get(filePath)));
+        return data;
+    }
 
 }
