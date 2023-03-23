@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77bbcf9d-3f2e-4615-a3e8-8a9ee09c9bfa" name="Changes" comment="6th commit w/API testing automation part2">
-      <change afterPath="$PROJECT_DIR$/screenshots/passed/Add employee from frontend and get data from DB to verify it 2023-03-08-22-11-55.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/APIPackage/apiExamples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/APIPackage/apiReveiewExamples2.java" afterDir="false" />
+    <list default="true" id="77bbcf9d-3f2e-4615-a3e8-8a9ee09c9bfa" name="Changes" comment="7th commit with updated DBauto with Sohel">
+      <change afterPath="$PROJECT_DIR$/screenshots/failed/Add employee from frontend and get data from DB to verify it 2023-03-22-19-07-00.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RestAssuredAPInote.txt" beforeDir="false" afterPath="$PROJECT_DIR$/RestAssuredAPInote.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/APISteps/APIWorkFlowSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APISteps/APIWorkFlowSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/DatabaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/DatabaseSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/APIPayloadConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/APIPayloadConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/DBUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/DBUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddEmployee.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddEmployee.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674455612774</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="7th commit with updated DBauto with Sohel">
+      <created>1678332487617</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678332487617</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,6 +261,7 @@
     <MESSAGE value="5th commit w/dbSQL, HardAPI" />
     <MESSAGE value="6th commit w/API testing automation part1" />
     <MESSAGE value="6th commit w/API testing automation part2" />
-    <option name="LAST_COMMIT_MESSAGE" value="6th commit w/API testing automation part2" />
+    <MESSAGE value="7th commit with updated DBauto with Sohel" />
+    <option name="LAST_COMMIT_MESSAGE" value="7th commit with updated DBauto with Sohel" />
   </component>
 </project>

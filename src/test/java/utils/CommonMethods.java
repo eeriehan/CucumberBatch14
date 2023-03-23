@@ -28,6 +28,8 @@ public class CommonMethods extends PageInitializer {
         switch (ConfigReader.getPropertyValue("browser")) {
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--no-sandbox");
+                chromeOptions.addArguments("--disable-dev-shm-usage");
                 // change true or false, depends on if you want headless or not
                 chromeOptions.setHeadless(false);
                 WebDriverManager.chromedriver().setup();
